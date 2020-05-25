@@ -1,0 +1,28 @@
+@import "config";
+@import "style";
+
+body{
+    color: map-get($colors, "blue");
+    padding: map-get($padding, "blue");
+}
+
+article {
+    section{
+        padding: map-get($padding, "blue");
+    }
+
+    code {
+        padding: map-get($padding,"blue" );
+    }
+}
+
+h6 {
+    padding: map-get($padding,"blue" )*2;
+}
+
+
+h1,
+h2,
+h6 {
+    color:map-get($colors,"blue" );
+}

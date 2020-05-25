@@ -1,0 +1,28 @@
+@mixin box-shadow-style ($box-size:10px 10px 19px -4px, $box-color: rgba(255, 255, 255, 0.75)) {
+    -webkit-box-shadow: $box-size $box-color;
+    -moz-box-shadow: $box-size $box-color;
+    box-shadow: $box-size $box-color;
+}
+
+$padding: ("red": 16px, "blue": 8px);
+$colors:("blue": #2748B3,"black":  #000, "red": #df2b2b);
+$white: #fff;
+$radial-gradient: 
+    radial-gradient($white, rgba(255, 255, 255, 0.2) 2px, 
+    transparent 40px), 
+    radial-gradient($white, rgba(255, 255, 255, 0.15) 1px, 
+    transparent 30px), 
+    radial-gradient($white, rgba(255, 255, 255, 0.1) 2px, 
+    transparent 40px), 
+    radial-gradient(rgba(255, 255, 255, 0.4), 
+    rgba(255, 255, 255, 0.1) 2px, 
+    transparent 30px);
+ 
+
+.messages-basic {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: blue;
+    background-color:black;
+    width: 100%
+}
